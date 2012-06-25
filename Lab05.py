@@ -37,8 +37,11 @@ def isPalindrome(string):
             return False
     return True
 
-print isPalindrome('a man a plan a canal panama')
+def isSubstring(stringA,stringB): 
+    if stringB.find(stringA) >= 0:
+        return True
+    else:
+        return False
 
-#def isSubstring(a,b):
-    
-    #return True
+
+isSubstring('foo','barfoobar')
